@@ -1,4 +1,3 @@
-console.log("prabal arora");
 
 const getUsername = document.querySelector('#user') as HTMLInputElement //TYPE ASSERTION
 const formSubmit = document.querySelector('.form') as HTMLFormElement;
@@ -51,7 +50,7 @@ function fetchUserData(url:string) {
 
 fetchUserData("https://api.github.com/users")
 
-// let's perform search functionality
+//search functionality
 formSubmit.addEventListener('submit',async(e) => {
         e.preventDefault();
         const searchTerm = getUsername.value.toUpperCase();
